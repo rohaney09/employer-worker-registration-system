@@ -28,7 +28,7 @@ public class Job implements Serializable, Cloneable{
 		this.date = null;
 	}
 	
-	private Job(Job.JobBuilder builder) throws EntityException{
+	private Job(Job.JobBuilder builder)throws EntityException{
 		
 		this(builder.id,
 				EmployerDAO.getInstance().findById(builder.employer_id),
@@ -39,7 +39,7 @@ public class Job implements Serializable, Cloneable{
 		
 	}
 	
-	private Job(int id, Employer employer, Price price, String title, String description, Timestamp date) throws EntityException{
+	private Job(int id, Employer employer,Price price,String title,String description, Timestamp date) throws EntityException{
 		super();
 		setId(id);
 		setEmployer(employer);
