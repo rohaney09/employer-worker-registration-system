@@ -39,7 +39,7 @@ public class Job implements Serializable, Cloneable{
 		
 	}
 	
-	private Job(int id, Employer employer,Price price,String title,String description, Timestamp date) throws EntityException{
+	private Job(int id, Employer employer,Price price,String title,String description,Timestamp date) throws EntityException{
 		super();
 		setId(id);
 		setEmployer(employer);
